@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedido Online DevoraLeite</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Work+Sans:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,0..200"
+        rel="stylesheet" />
+    <link rel="icon" type="image/png" href="fotos/DLeite.png">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="contenedor-principal">
+
+        <header class="encabezado encabezado-pedido">
+            <div class="contenedor-limite">
+                <div class="encabezado-contenido">
+                    <a href="index.html" class="logo">
+                            <img src="fotos/DLeite.png" alt="Logo de Devora Leite">
+                    </a>
+                    <nav class="navegacion" role="navigation">
+                            <a href="menu/menu.html" class="enlace-navegacion">Menú</a>
+                            <a href="galeria.html" class="enlace-navegacion">Galería</a>
+                            <a href="contacto.html" class="enlace-navegacion">Contacto</a>
+                            <a href="pedido.html" class="boton-primario boton-pedido">Pedir Ahora</a>
+                            <a href="cuenta.html" class="enlace-navegacion icono-cuenta" title="Mi Cuenta">
+                                <span class="material-symbols-outlined">person</span>
+                            </a>
+                        </nav>
+                    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú móvil">
+                        <span class="material-symbols-outlined icono-menu">menu</span>
+                    </button>
+                    <button class="modo-oscuro-toggle" id="modo-oscuro-toggle" aria-label="Alternar modo oscuro">
+                        <span class="material-symbols-outlined icono-sol">light_mode</span>
+                        <span class="material-symbols-outlined icono-luna">dark_mode</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <nav class="menu-movil-contenedor" id="menu-movil" role="navigation">
+            <a href="menu/menu.html" class="enlace-navegacion-movil">Menú</a>
+            <a href="galeria.html" class="enlace-navegacion-movil">Galería</a>
+            <a href="contacto.html" class="enlace-navegacion-movil">Contacto</a>
+            <a href="cuenta.html" class="enlace-navegacion-movil">Mi Cuenta</a>
+        </nav>
+
+        <main class="contenido-principal-pedido">
+            <div class="contenedor-limite grid-pedido">
+
+                <div class="columna-catalogo">
+                    <h1 class="titulo-pagina-pedido">Comida para Llevar</h1>
+
+                    <form class="formulario-busqueda">
+                        <label class="campo-direccion">
+                            <input class="input-direccion" placeholder="Introduce tu dirección de entrega"
+                                type="text" />
+                            <span class="material-symbols-outlined icono-buscador">search</span>
+                            <button type="button" class="boton-ubicacion" title="Mi ubicación">
+                                <span class="material-symbols-outlined">my_location</span>
+                            </button>
+                        </label>
+                    </form>
+
+                    <div class="grid-categorias-productos">
+
+                        <aside class="columna-categorias">
+                            <h3 class="titulo-categorias">Categorías</h3>
+                            <nav class="navegacion-lateral">
+                                <a href="menu/menu.html" class="enlace-categoria enlace-activo">Entrantes</a>
+                                <a href="menu/principales.html" class="enlace-categoria">Primeros platos</a>
+                                <a href="menu/postres.html" class="enlace-categoria">Postres</a>
+                                <a href="#" class="enlace-categoria">Ultimos pedidos</a>
+                            </nav>
+                        </aside>
+
+                        <section class="columna-productos">
+                            <div class="lista-productos">
+
+                                <div class="tarjeta-producto">
+                                    <div class="producto-imagen"
+                                        style="background-image: url('fotos/especialidades.png');">
+                                    </div>
+                                    <div class="producto-detalle">
+                                        <h3 class="producto-titulo">Atun tartar</h3>
+                                        <p class="producto-descripcion">Atun del norte con aguacate fresco.</p>
+                                        <div class="producto-acciones">
+                                            <p class="producto-precio">16 €</p>
+                                            <button class="boton-agregar">
+                                                <span class="material-symbols-outlined">add_shopping_cart</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tarjeta-producto">
+                                    <div class="producto-imagen"
+                                        style="background-image: url('fotos/especialidades_2.png');">
+                                    </div>
+                                    <div class="producto-detalle">
+                                        <h3 class="producto-titulo">Lubina al horno</h3>
+                                        <p class="producto-descripcion">Lubina del norte con su pil pil en una reducción.</p>
+                                        <div class="producto-acciones">
+                                            <p class="producto-precio">28 €</p>
+                                            <button class="boton-agregar">
+                                                <span class="material-symbols-outlined">add_shopping_cart</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tarjeta-producto">
+                                    <div class="producto-imagen"
+                                        style="background-image: url('fotos/especialidades_3.png');">
+                                    </div>
+                                    <div class="producto-detalle">
+                                        <h3 class="producto-titulo">Pizza Dleite</h3>
+                                        <p class="producto-descripcion">Masa de pizza casera fermentada 48 horas y con la mejor seleccion de ingredientes.</p>
+                                        <div class="producto-acciones">
+                                            <p class="producto-precio">14 €</p>
+                                            <button class="boton-agregar">
+                                                <span class="material-symbols-outlined">add_shopping_cart</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <aside class="columna-carrito">
+                    <div class="resumen-carrito">
+                        <h2 class="titulo-carrito">Tu Pedido</h2>
+
+                        <div class="lista-articulos">
+
+                            <div class="articulo-carrito">
+                                <span class="articulo-cantidad">2x</span>
+                                <div class="articulo-detalle">
+                                    <p class="articulo-nombre">Pizza Dleite</p>
+                                    <p class="articulo-extras">Queso extra.</p>
+                                </div>
+                                <p class="articulo-precio">14 €</p>
+                                <button class="articulo-remover">
+                                    <span class="material-symbols-outlined">close</span>
+                                </button>
+                            </div>
+
+                            <div class="articulo-carrito">
+                                <span class="articulo-cantidad">1x</span>
+                                <div class="articulo-detalle">
+                                    <p class="articulo-nombre">Atun tartar</p>
+                                    <p class="articulo-extras">Pan extra.</p>
+                                </div>
+                                <p class="articulo-precio">16 €</p>
+                                <button class="articulo-remover">
+                                    <span class="material-symbols-outlined">close</span>
+                                </button>
+                            </div>
+
+                            <div class="articulo-carrito">
+                                <span class="articulo-cantidad">1x</span>
+                                <div class="articulo-detalle">
+                                    <p class="articulo-nombre">Lubina al horno</p>
+                                    <p class="articulo-extras">Patatas fritas.</p>
+                                </div>
+                                <p class="articulo-precio">28 €</p>
+                                <button class="articulo-remover">
+                                    <span class="material-symbols-outlined">close</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="detalle-total">
+                            <div class="linea-total">
+                                <span class="etiqueta-total">Subtotal</span>
+                                <span class="valor-total">70.00 €</span>
+                            </div>
+                            <div class="linea-total">
+                                <span class="etiqueta-total">Envío</span>
+                                <span class="valor-total">5.00 €</span>
+                            </div>
+                            <div class="linea-total linea-total-final">
+                                <span class="etiqueta-total">Total</span>
+                                <span class="valor-total">75.00 €</span>
+                            </div>
+                        </div>
+
+                        <button class="boton-primario boton-proceder-pago">
+                            <span>Proceder al Pago</span>
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                    </div>
+                </aside>
+            </div>
+        </main>
+
+        <footer class="pie-pagina">
+                <div class="contenedor-limite">
+                    <div class="pie-grid">
+                        <div class="pie-columna">
+                            <a href="index.html" class="logo">
+                            <img src="fotos/DLeite.png" alt="Logo de Devora Leite">
+                            </a>
+                            <p class="pie-info">C/ Corrida, nº6</p>
+                            <p class="pie-info">Telf: +34 985 121 589</p>
+                            <p class="pie-info">E-mail: dleitea@devoraleite.com</p>
+                        </div>
+                        <div class="pie-columna">
+                            <h3 class="pie-titulo">Enlaces Rápidos</h3>
+                            <ul class="pie-lista">
+                                <li><a href="index.html">Inicio</a></li>
+                                <li><a href="menu/menu.html">Menú</a></li>
+                                <li><a href="galeria.html">Galería</a></li>
+                                <li><a href="contacto.html">Reservas</a></li>
+                            </ul>
+                        </div>
+                        <div class="pie-columna">
+                            <h3 class="pie-titulo">Suscríbete</h3>
+                            <p class="pie-info">Recibe nuestras últimas noticias y ofertas especiales.</p>
+                            <form class="formulario-suscripcion">
+                                <input class="input-suscripcion" placeholder="Su correo electrónico" type="email" />
+                                <button class="boton-suscripcion" type="submit">Suscribirse</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="pie-derechos">
+                        <p> 2025 Devora Leite. Carlos Méndez Sandín (DIW).</p>
+                    </div>
+                </div>
+            </footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevoraLeite</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Work+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+    <link rel="icon" type="image/png" href="fotos/DLeite.png">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="contenedor-principal">
+        <div class="contenedor-contenido">
+
+            <header class="encabezado">
+                <div class="contenedor-limite">
+                    <div class="encabezado-contenido">
+                        <a href="index.html" class="logo">
+                            <img src="fotos/DLeite.png" alt="Logo de Devora Leite">
+                        </a>
+                        <nav class="navegacion" role="navigation">
+                            <a href="menu/menu.html" class="enlace-navegacion">Menú</a>
+                            <a href="galeria.html" class="enlace-navegacion">Galería</a>
+                            <a href="contacto.html" class="enlace-navegacion">Contacto</a>
+                            <a href="pedido.html" class="boton-primario boton-pedido">Pedir Ahora</a>
+                            <a href="cuenta.html" class="enlace-navegacion icono-cuenta" title="Mi Cuenta">
+                                <span class="material-symbols-outlined">person</span>
+                            </a>
+                        </nav>
+                        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú móvil">
+                            <span class="material-symbols-outlined icono-menu">menu</span>
+                        </button>
+                        <button class="modo-oscuro-toggle" id="modo-oscuro-toggle" aria-label="Alternar modo oscuro">
+                            <span class="material-symbols-outlined icono-sol">light_mode</span>
+                            <span class="material-symbols-outlined icono-luna">dark_mode</span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <nav class="menu-movil-contenedor" id="menu-movil" role="navigation">
+                <a href="menu/menu.html" class="enlace-navegacion-movil">Menú</a>
+                <a href="galeria.html" class="enlace-navegacion-movil">Galería</a>
+                <a href="contacto.html" class="enlace-navegacion-movil">Contacto</a>
+                <a href="cuenta.html" class="enlace-navegacion-movil">Mi Cuenta</a>
+            </nav>
+
+            <main class="contenido-principal">
+                <section class="seccion seccion-hero">
+                    <div class="contenedor-limite hero-contenido">
+                        <div class="hero-texto">
+                            <h1 class="hero-titulo">Comida Exquisita. Servicio Impecable.</h1>
+                            <p class="hero-subtitulo">
+                                Disfruta de la mejor experiencia gastronómica con nuestro servicio de mesa y entrega
+                                premium.
+                            </p>
+                            <div class="hero-acciones">
+                                <button class="boton-primario">Reservar Mesa</button>
+                                <button class="boton-secundario">Pedir a Domicilio</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="seccion seccion-destacados">
+                    <div class="contenedor-limite">
+                        <h2 class="titulo-seccion">Nuestros Platos Estacionales Destacados</h2>
+                        <p class="subtitulo-seccion">Una selección de favoritos que no te puedes perder.</p>
+                        <div class="grid-platos-destacados">
+
+                            <div class="tarjeta-plato">
+                                <div class="tarjeta-imagen"
+                                    style="background-image: url('fotos/especialidades.png');">
+                                </div>
+                                <div class="tarjeta-cuerpo">
+                                    <h3 class="tarjeta-titulo">Atun tartar</h3>
+                                    <p class="tarjeta-descripcion">Atun del norte con aguacate fresco.</p>
+                                    <div class="tarjeta-pie">
+                                        <p class="tarjeta-precio">16 €</p>
+                                        <button class="boton-agregar">
+                                            <span class="material-symbols-outlined">add_shopping_cart</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tarjeta-plato">
+                                <div class="tarjeta-imagen"
+                                    style="background-image: url('fotos/especialidades_2.png');">
+                                </div>
+                                <div class="tarjeta-cuerpo">
+                                    <h3 class="tarjeta-titulo">Lubina al horno</h3>
+                                    <p class="tarjeta-descripcion">Lubina del norte con su pil pil en una reducción.</p>
+                                    <div class="tarjeta-pie">
+                                        <p class="tarjeta-precio">28 €</p>
+                                        <button class="boton-agregar">
+                                            <span class="material-symbols-outlined">add_shopping_cart</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tarjeta-plato">
+                                <div class="tarjeta-imagen"
+                                    style="background-image: url('fotos/especialidades_3.png');">
+                                </div>
+                                <div class="tarjeta-cuerpo">
+                                    <h3 class="tarjeta-titulo">Pizza Dleite</h3>
+                                    <p class="tarjeta-descripcion">Masa de pizza casera fermentada 48 horas y con la mejor seleccion de ingredientes.</p>
+                                    <div class="tarjeta-pie">
+                                        <p class="tarjeta-precio">14 €</p>
+                                        <button class="boton-agregar">
+                                            <span class="material-symbols-outlined">add_shopping_cart</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="destacados-ver-mas">
+                            <a href="menu/menu.html" class="boton-ver-menu">Ver Menú Completo</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="seccion seccion-acerca-de">
+                    <div class="contenedor-limite grid-acerca-de">
+                        <div class="acerca-de-texto">
+                            <h2 class="titulo-seccion">Nuestra Historia</h2>
+                            <p class="parrafo-acerca-de">
+                                DevoraLeite nació de la pasión por la cocina auténtica y los ingredientes frescos. Desde
+                                nuestra apertura, nos hemos dedicado a crear deleites culinarios inolvidable, combinando la
+                                tradición con un toque moderno. Nuestro chef principal ha trabajado en algunos
+                                de los mejores restaurantes del mundo, y trae esa experiencia directamente a tu mesa.
+                            </p>
+                            <p class="parrafo-acerca-de">
+                                Creemos que la comida es un arte y una celebración. Ven y experimenta la diferencia.
+                            </p>
+                            <a href="galeria.html" class="boton-ver-menu">Ver más</a>
+                        </div>
+                        <div class="acerca-de-imagen"
+                            style="background-image: url('fotos/sobre_3.png');">
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="pie-pagina">
+                <div class="contenedor-limite">
+                    <div class="pie-grid">
+                        <div class="pie-columna">
+                            <a href="index.html" class="logo">
+                            <img src="fotos/DLeite.png" alt="Logo de Devora Leite">
+                            </a>
+                            <p class="pie-info">C/ Corrida, nº6</p>
+                            <p class="pie-info">Telf: +34 985 121 589</p>
+                            <p class="pie-info">E-mail: dleitea@devoraleite.com</p>
+                        </div>
+                        <div class="pie-columna">
+                            <h3 class="pie-titulo">Enlaces Rápidos</h3>
+                            <ul class="pie-lista">
+                                <li><a href="index.html">Inicio</a></li>
+                                <li><a href="menu/menu.html">Menú</a></li>
+                                <li><a href="galeria.html">Galería</a></li>
+                                <li><a href="contacto.html">Reservas</a></li>
+                            </ul>
+                        </div>
+                        <div class="pie-columna">
+                            <h3 class="pie-titulo">Suscríbete</h3>
+                            <p class="pie-info">Recibe nuestras últimas noticias y ofertas especiales.</p>
+                            <form class="formulario-suscripcion">
+                                <input class="input-suscripcion" placeholder="Su correo electrónico" type="email" />
+                                <button class="boton-suscripcion" type="submit">Suscribirse</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="pie-derechos">
+                        <p> 2025 Devora Leite. Carlos Méndez Sandín (DIW).</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

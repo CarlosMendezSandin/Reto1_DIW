@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Usuario DevoraLeite</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Public+Sans:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="icon" type="image/png" href="fotos/DLeite.png">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="cuerpo-autenticacion">
+    <div class="contenedor-principal">
+        <div class="contenedor-centrado">
+            <div class="tarjeta-autenticacion">
+
+                <header class="autenticacion-encabezado">
+                    <a href="index.html" class="logo">
+                        <img src="fotos/DLeite.png" alt="Logo de Devora Leite">
+                    </a>
+                </header>
+
+                <main class="autenticacion-cuerpo">
+                    <div class="autenticacion-titulo">
+                        <h1 class="autenticacion-h1">Bienvenido de Vuelta</h1>
+                        <p class="autenticacion-subtitulo">
+                            Inicia sesión en tu cuenta para hacer pedidos, reservar mesas y más.
+                        </p>
+                    </div>
+
+                    <form class="formulario-autenticacion" action="" method="POST">
+                        <div class="campo-grupo">
+                            <label class="etiqueta-campo requerido" for="email">Correo Electrónico</label>
+                            <input class="input-campo" id="email" name="correo_usuario" type="email" placeholder="ejemplo@correo.com" required autocomplete="username" />
+                        </div>
+                        <div class="campo-grupo">
+                            <div class="campo-alineado">
+                                <label class="etiqueta-campo requerido" for="password">Contraseña</label>
+                                <a class="enlace-olvido-contrasena" href="#">¿Olvidaste tu contraseña?</a>
+                            </div>
+                            <input class="input-campo" id="password" name="contrasena_usuario" type="password" placeholder="••••••••" required autocomplete="current-password" />
+                        </div>
+                        <div class="campo-grupo grupo-checkbox">
+                            <input class="input-checkbox" id="remember" name="recordarme" type="checkbox" />
+                            <label class="etiqueta-checkbox" for="remember">Recordarme</label>
+                        </div>
+                        <div class="autenticacion-acciones">
+                            <button class="boton-primario boton-sesion" type="submit">Iniciar Sesión</button>
+                            <p class="autenticacion-registro">
+                                ¿No tienes una cuenta? <a class="enlace-registro" href="#">Crea una</a>
+                            </p>
+                        </div>
+                    </form>
+                </main>
+
+                <footer class="autenticacion-pie">
+                    <div class="autenticacion-enlaces">
+                        <a href="#">Términos de Servicio</a>
+                        <a href="#">Política de Privacidad</a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

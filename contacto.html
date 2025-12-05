@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto DevoraLeite</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Work+Sans:wght@400;500;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="icon" type="image/png" href="fotos/DLeite.png">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="contenedor-principal">
+        <div class="contenedor-contenido">
+
+            <header class="encabezado">
+                <div class="contenedor-limite">
+                    <div class="encabezado-contenido">
+                        <a href="index.html" class="logo">
+                            <img src="fotos/DLeite.png" alt="Logo de Devora Leite">
+                        </a>
+                        <nav class="navegacion" role="navigation">
+                            <a href="menu/menu.html" class="enlace-navegacion">Menú</a>
+                            <a href="galeria.html" class="enlace-navegacion">Galería</a>
+                            <a href="contacto.html" class="enlace-navegacion enlace-activo">Contacto</a>
+                            <a href="pedido.html" class="boton-primario boton-pedido">Pedir Ahora</a>
+                            <a href="cuenta.html" class="enlace-navegacion icono-cuenta" title="Mi Cuenta">
+                                <span class="material-symbols-outlined">person</span>
+                            </a>
+                        </nav>
+                        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú móvil">
+                            <span class="material-symbols-outlined icono-menu">menu</span>
+                        </button>
+                        <button class="modo-oscuro-toggle" id="modo-oscuro-toggle" aria-label="Alternar modo oscuro">
+                            <span class="material-symbols-outlined icono-sol">light_mode</span>
+                            <span class="material-symbols-outlined icono-luna">dark_mode</span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <nav class="menu-movil-contenedor" id="menu-movil" role="navigation">
+                <a href="menu/menu.html" class="enlace-navegacion-movil">Menú</a>
+                <a href="galeria.html" class="enlace-navegacion-movil">Galería</a>
+                <a href="contacto.html" class="enlace-navegacion-movil enlace-activo">Contacto</a>
+                <a href="cuenta.html" class="enlace-navegacion-movil">Mi Cuenta</a>
+            </nav>
+
+            <main class="contenido-principal">
+                <div class="contenedor-limite">
+
+                    <section class="seccion seccion-contacto-hero">
+                        <div class="contacto-hero-texto">
+                            <h1 class="contacto-hero-titulo">¿Tienes alguna pregunta?</h1>
+                            <p class="contacto-hero-subtitulo">
+                                Nos encantaría saber de ti. Contáctanos con cualquier pregunta o haz una reserva para
+                                cenar con nosotros.
+                            </p>
+                        </div>
+                        <a href="#" class="boton-secundario boton-reserva">Hacer una Reserva</a>
+                    </section>
+
+                    <section class="seccion grid-contacto">
+
+                        <div class="contacto-informacion">
+                            <h2 class="titulo-seccion">Nuestra Ubicación</h2>
+                            <address class="datos-contacto">
+                                <div class="dato-item">
+                                    <h3 class="dato-titulo">Dirección</h3>
+                                    <p class="dato-texto">C/ Corrida nº6, Gijón, España</p>
+                                </div>
+                                <div class="dato-item">
+                                    <h3 class="dato-titulo">Horario</h3>
+                                    <p class="dato-texto">Martes - Sabado: 20:00 - 00:00</p>
+                                    <p class="dato-texto">Martes - Sabado: 12:00 - 16:00</p>
+                                    <p class="dato-texto">Domingo y Lunes: Cerrado por descanso</p>
+                                </div>
+                                <div class="dato-item">
+                                    <h3 class="dato-titulo">Contacto</h3>
+                                    <p class="dato-texto">Telf: +34 985 121 589</p>
+                                    <p class="dato-texto">E-mail: dleitea@devoraleite.com</p>
+                                </div>
+                            </address>
+                            <div class="mapa-placeholder">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1719.6256886079102!2d-5.665059991513617!3d43.542913034729175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd367c6700558f6d%3A0x914b9a44643eab1f!2sC.%20Corrida%2C%206%2C%20Centro%2C%2033206%20Gij%C3%B3n%2C%20Asturias!5e0!3m2!1ses!2ses!4v1764757256219!5m2!1ses!2ses"
+                                    width="600" height="450" style="border:0; border-radius: .7rem;" allowfullscreen=""
+                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+
+                        <div class="contacto-formulario-contenedor">
+                            <h2 class="titulo-seccion">Envíanos un Mensaje</h2>
+                            <form class="formulario-contacto" action="" method="POST">
+                                <div class="campo-grupo">
+                                    <label class="etiqueta-campo requerido" for="name">Nombre</label>
+                                    <input class="input-campo" id="name" name="nombre_usuario" placeholder="Tú nombre" type="text" required autocomplete="name" />
+                                </div>
+                                <div class="campo-grupo">
+                                    <label class="etiqueta-campo requerido" for="email">Correo Electrónico</label>
+                                    <input class="input-campo" id="email" name="correo_usuario"placeholder="dleitea@devoraleite.com" type="email" required autocomplete="email" />
+                                </div>
+                                <div class="campo-grupo">
+                                    <label class="etiqueta-campo" for="phone">Teléfono</label>
+                                    <input class="input-campo" id="phone" name="telefono_usuario" placeholder="+34 985 121 589" type="tel" autocomplete="tel" />
+                                </div>
+                                <div class="campo-grupo">
+                                    <label class="etiqueta-campo requerido" for="subject">Asunto</label>
+                                    <input class="input-campo" id="subject" name="asunto" placeholder="Consulta de evento, catering, trabajar con nosotros, etc." type="text" required />
+                                </div>
+                                <div class="campo-grupo">
+                                    <label class="etiqueta-campo requerido" for="message">Mensaje</label>
+                                    <textarea class="input-campo textarea-campo" id="message" name="mensaje_usuario" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                                </div>
+                                <div class="campo-grupo grupo-checkbox">
+                                    <input class="input-checkbox" id="acepto_privacidad" name="acepto_privacidad" type="checkbox" required />
+                                    <label class="etiqueta-checkbox requerido" for="acepto_privacidad">Acepto la <a href="#">Política de Privacidad</a></label>
+                                </div>
+                                <button class="boton-primario boton-enviar-formulario" type="submit">
+                                    <span class="material-symbols-outlined">send</span>
+                                    Enviar Mensaje
+                                </button>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </main>
+
+            <footer class="pie-pagina">
+                <div class="contenedor-limite">
+                    <div class="pie-grid">
+                        <div class="pie-columna">
+                            <a href="index.html" class="logo">
+                                <img src="fotos/DLeite.png" alt="Logo de Devora Leite">
+                            </a>
+                            <p class="pie-info">C/ Corrida, nº6</p>
+                            <p class="pie-info">Telf: +34 985 121 589</p>
+                            <p class="pie-info">E-mail: dleitea@devoraleite.com</p>
+                        </div>
+                        <div class="pie-columna">
+                            <h3 class="pie-titulo">Enlaces Rápidos</h3>
+                            <ul class="pie-lista">
+                                <li><a href="index.html">Inicio</a></li>
+                                <li><a href="menu/menu.html">Menú</a></li>
+                                <li><a href="galeria.html">Galería</a></li>
+                                <li><a href="contacto.html">Reservas</a></li>
+                            </ul>
+                        </div>
+                        <div class="pie-columna">
+                            <h3 class="pie-titulo">Suscríbete</h3>
+                            <p class="pie-info">Recibe nuestras últimas noticias y ofertas especiales.</p>
+                            <form class="formulario-suscripcion">
+                                <input class="input-suscripcion" placeholder="Su correo electrónico" type="email" />
+                                <button class="boton-suscripcion" type="submit">Suscribirse</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="pie-derechos">
+                        <p> 2025 Devora Leite. Carlos Méndez Sandín (DIW).</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

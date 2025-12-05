@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galería de Fotos DevoraLeite</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Epilogue:ital,wght@0,100..900;1,100..900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+    <link rel="icon" type="image/png" href="fotos/DLeite.png">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="contenedor-principal">
+        <div class="contenedor-contenido">
+
+            <header class="encabezado">
+                <div class="contenedor-limite">
+                    <div class="encabezado-contenido">
+                        <a href="index.html" class="logo">
+                            <img src="fotos/DLeite.png" alt="Logo de Devora Leite">
+                        </a>
+                        <nav class="navegacion" role="navigation">
+                            <a href="menu/menu.html" class="enlace-navegacion">Menú</a>
+                            <a href="galeria.html" class="enlace-navegacion enlace-activo">Galería</a>
+                            <a href="contacto.html" class="enlace-navegacion">Contacto</a>
+                            <a href="pedido.html" class="boton-primario boton-pedido">Pedir Ahora</a>
+                            <a href="cuenta.html" class="enlace-navegacion icono-cuenta" title="Mi Cuenta">
+                                <span class="material-symbols-outlined">person</span>
+                            </a>
+                        </nav>
+                        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú móvil">
+                            <span class="material-symbols-outlined icono-menu">menu</span>
+                        </button>
+                        <button class="modo-oscuro-toggle" id="modo-oscuro-toggle" aria-label="Alternar modo oscuro">
+                            <span class="material-symbols-outlined icono-sol">light_mode</span>
+                            <span class="material-symbols-outlined icono-luna">dark_mode</span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <nav class="menu-movil-contenedor" id="menu-movil" role="navigation">
+                <a href="menu/menu.html" class="enlace-navegacion-movil">Menú</a>
+                <a href="galeria.html" class="enlace-navegacion-movil enlace-activo">Galería</a>
+                <a href="contacto.html" class="enlace-navegacion-movil">Contacto</a>
+                <a href="cuenta.html" class="enlace-navegacion-movil">Mi Cuenta</a>
+            </nav>
+
+            <main class="contenido-principal">
+                <div class="contenedor-limite">
+
+                    <header class="seccion-encabezado">
+                        <h1 class="titulo-pagina-galeria">Momentos DevoraLeite</h1>
+                        <p class="subtitulo-pagina-galeria">Una muestra de nuestros platos, nuestro ambiente y nuestro
+                            equipo.</p>
+                    </header>
+
+                    <section class="grid-galeria">
+
+                        <div class="item-galeria">
+
+                            <div class="contenedor-volteo">
+
+                                <div class="cara-frontal" style="background-image: url('fotos/sobre_1.png');"
+                                    data-alt="Nuestro equipo técnico">
+                                </div>
+
+                                <div class="cara-trasera">
+                                    <h3>Equipo técnico</h3>
+                                    <p>Nuestros profesionales dentro y fuera de los fogones.</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="item-galeria">
+
+                            <div class="contenedor-volteo">
+
+                                <div class="cara-frontal" style="background-image: url('fotos/sobre_2.png');"
+                                    data-alt="Nuestras huertas con productos de temporada y atemporales">
+                                </div>
+
+                                <div class="cara-trasera">
+                                    <h3>Ingredientes de calidad</h3>
+                                    <p>Directo de nuestro huerto a la mesa, para lograr el mejor deleite gastronómico.</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="item-galeria">
+
+                            <div class="contenedor-volteo">
+
+                                <div class="cara-frontal" style="background-image: url('fotos/sobre_3.png');"
+                                    data-alt="Nuestro equipo de chefs de cocina">
+                                </div>
+
+                                <div class="cara-trasera">
+                                    <h3>Chefs de primera</h3>
+                                    <p>Los mejores profesionales con experiencia en estrellas michelin para ofrecerte los mejores sabores.</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="item-galeria">
+
+                            <div class="contenedor-volteo">
+
+                                <div class="cara-frontal" style="background-image: url('fotos/sobre_4.png');"
+                                    data-alt="Foto de los chefs en sus funciones">
+                                </div>
+
+                                <div class="cara-trasera">
+                                    <h3>Ambiente excelente</h3>
+                                    <p>Muy buenos profesionales y mejores personas tanto dentro como fuera del trabajo.</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="item-galeria">
+
+                            <div class="contenedor-volteo">
+
+                                <div class="cara-frontal" style="background-image: url('fotos/sobre_5.png');"
+                                    data-alt="Foto de nuestras instalaciones de cocina">
+                                </div>
+
+                                <div class="cara-trasera">
+                                    <h3>Las instalaciones</h3>
+                                    <p>Ademas de tener las mejores instalaciones y utensilios tenemos la máxima limpieza posible.</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="item-galeria">
+
+                            <div class="contenedor-volteo">
+
+                                <div class="cara-frontal" style="background-image: url('fotos/ingredientes_1.png');"
+                                    data-alt="Una muestra de los chuletones de las ganaderias asturianas">
+                                </div>
+
+                                <div class="cara-trasera">
+                                    <h3>Carnes de 1ª</h3>
+                                    <p>Gracias a las ganaderias asturianas tenemos la mejor carne del norte de España IGP .</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="item-galeria">
+
+                            <div class="contenedor-volteo">
+
+                                <div class="cara-frontal" style="background-image: url('fotos/ingredientes_2.png');"
+                                    data-alt="Una muestra de los peces que traemos de la rula directamente">
+                                </div>
+
+                                <div class="cara-trasera">
+                                    <h3>Pescado de calidad</h3>
+                                    <p>Del mar a la mesa, todos los dias por la mañana nuestro chef principal se reune con los pescadores de la rula para traeros los mejores ejemplares.</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+                </div>
+            </main>
+
+            <footer class="pie-pagina">
+                <div class="contenedor-limite">
+                    <div class="pie-grid">
+                        <div class="pie-columna">
+                            <a href="index.html" class="logo">
+                                <img src="fotos/DLeite.png" alt="Logo de Devora Leite">
+                            </a>
+                            <p class="pie-info">C/ Corrida, nº6</p>
+                            <p class="pie-info">Telf: +34 985 121 589</p>
+                            <p class="pie-info">E-mail: dleitea@devoraleite.com</p>
+                        </div>
+                        <div class="pie-columna">
+                            <h3 class="pie-titulo">Enlaces Rápidos</h3>
+                            <ul class="pie-lista">
+                                <li><a href="index.html">Inicio</a></li>
+                                <li><a href="menu/menu.html">Menú</a></li>
+                                <li><a href="galeria.html">Galería</a></li>
+                                <li><a href="contacto.html">Reservas</a></li>
+                            </ul>
+                        </div>
+                        <div class="pie-columna">
+                            <h3 class="pie-titulo">Suscríbete</h3>
+                            <p class="pie-info">Recibe nuestras últimas noticias y ofertas especiales.</p>
+                            <form class="formulario-suscripcion">
+                                <input class="input-suscripcion" placeholder="Su correo electrónico" type="email" />
+                                <button class="boton-suscripcion" type="submit">Suscribirse</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="pie-derechos">
+                        <p> 2025 Devora Leite. Carlos Méndez Sandín (DIW).</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

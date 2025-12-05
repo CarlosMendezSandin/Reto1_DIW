@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usuario y Pedidos DevoraLeite</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+    <link rel="icon" type="image/png" href="fotos/DLeite.png">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="cuerpo-cuenta">
+    <div class="contenedor-principal">
+        <div class="contenedor-contenido">
+
+            <header class="encabezado encabezado-cuenta">
+                <div class="contenedor-limite">
+                    <div class="encabezado-contenido">
+                        <a href="index.html" class="logo">
+                            <img src="fotos/DLeite.png" alt="Logo de Devora Leite">
+                        </a>
+                        <nav class="navegacion" role="navigation">
+                            <a href="menu/menu.html" class="enlace-navegacion">Menú</a>
+                            <a href="galeria.html" class="enlace-navegacion">Galería</a>
+                            <a href="contacto.html" class="enlace-navegacion">Contacto</a>
+                            <a href="pedido.html" class="boton-primario boton-pedido">Pedir Ahora</a>
+                            <a href="cuenta.html" class="enlace-navegacion icono-cuenta enlace-activo"
+                                title="Mi Cuenta">
+                                <span class="material-symbols-outlined">person</span>
+                            </a>
+                        </nav>
+                        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú móvil">
+                            <span class="material-symbols-outlined icono-menu">menu</span>
+                        </button>
+                        <button class="modo-oscuro-toggle" id="modo-oscuro-toggle" aria-label="Alternar modo oscuro">
+                            <span class="material-symbols-outlined icono-sol">light_mode</span>
+                            <span class="material-symbols-outlined icono-luna">dark_mode</span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <nav class="menu-movil-contenedor" id="menu-movil" role="navigation">
+                <a href="menu/menu.html" class="enlace-navegacion-movil">Menú</a>
+                <a href="galeria.html" class="enlace-navegacion-movil">Galería</a>
+                <a href="contacto.html" class="enlace-navegacion-movil">Contacto</a>
+                <a href="cuenta.html" class="enlace-navegacion-movil enlace-activo">Mi Cuenta</a>
+            </nav>
+
+            <main class="contenido-principal-cuenta">
+                <div class="contenedor-limite grid-cuenta">
+
+                    <aside class="barra-lateral-cuenta">
+                        <div class="usuario-perfil">
+                            <div class="icono-perfil-grande">
+                                <span class="material-symbols-outlined">account_circle</span>
+                            </div>
+                            <h2 class="nombre-usuario">Juan Pérez</h2>
+                            <p class="email-usuario">juan.perez@correo.com</p>
+                        </div>
+
+                        <nav class="navegacion-cuenta" role="navigation">
+                            <a href="#" class="enlace-cuenta enlace-activo">
+                                <span class="material-symbols-outlined">dashboard</span>
+                                <p>Panel de Control</p>
+                            </a>
+                            <a href="#" class="enlace-cuenta">
+                                <span class="material-symbols-outlined">local_dining</span>
+                                <p>Mis Pedidos</p>
+                            </a>
+                            <a href="#" class="enlace-cuenta">
+                                <span class="material-symbols-outlined">credit_card</span>
+                                <p>Métodos de Pago</p>
+                            </a>
+                            <a href="#" class="enlace-cuenta">
+                                <span class="material-symbols-outlined">settings</span>
+                                <p>Configuración</p>
+                            </a>
+                            <a href="autenticar.html" class="enlace-cuenta enlace-cerrar-sesion">
+                                <span class="material-symbols-outlined">logout</span>
+                                <p>Cerrar Sesión</p>
+                            </a>
+                        </nav>
+                    </aside>
+
+                    <div class="contenido-cuenta">
+
+                        <section class="seccion-pedidos">
+                            <h1 class="titulo-pagina-cuenta">Mis Pedidos Recientes</h1>
+                            <p class="subtitulo-pagina-cuenta">Gestiona el historial de tus pedidos y consulta los
+                                detalles.</p>
+
+                            <div class="lista-pedidos">
+
+                                <div class="fila-encabezado-pedido">
+                                    <span>ID de Pedido</span>
+                                    <span>Fecha</span>
+                                    <span>Total</span>
+                                    <span>Estado</span>
+                                </div>
+
+                                <details class="item-pedido">
+                                    <summary class="resumen-pedido">
+                                        <div class="info-pedido-resumen">
+                                            <span>#DL1023</span>
+                                            <span>25 jul 2024</span>
+                                            <span>45.50 €</span>
+                                            <span class="estado-pedido estado-pendiente">Pendiente</span>
+                                        </div>
+                                        <span class="material-symbols-outlined icono-colapsar">expand_more</span>
+                                    </summary>
+                                    <div class="detalle-pedido-expandido">
+                                        <p class="texto-detalle-pedido">Vista detallada del pedido #DL1023...</p>
+                                    </div>
+                                </details>
+
+                                <details class="item-pedido">
+                                    <summary class="resumen-pedido">
+                                        <div class="info-pedido-resumen">
+                                            <span>#DL1022</span>
+                                            <span>20 jul 2024</span>
+                                            <span>78.00 €</span>
+                                            <span class="estado-pedido estado-en-camino">En Camino</span>
+                                        </div>
+                                        <span class="material-symbols-outlined icono-colapsar">expand_more</span>
+                                    </summary>
+                                    <div class="detalle-pedido-expandido">
+                                        <p class="texto-detalle-pedido">Vista detallada del pedido #DL1022...</p>
+                                    </div>
+                                </details>
+
+                                <details class="item-pedido">
+                                    <summary class="resumen-pedido">
+                                        <div class="info-pedido-resumen">
+                                            <span>#DL1021</span>
+                                            <span>18 jul 2023</span>
+                                            <span>154.20 €</span>
+                                            <span class="estado-pedido estado-completado">Completado</span>
+                                        </div>
+                                        <span class="material-symbols-outlined icono-colapsar">expand_more</span>
+                                    </summary>
+                                    <div class="detalle-pedido-expandido">
+                                        <p class="texto-detalle-pedido">Vista detallada del pedido #DL1021...</p>
+                                    </div>
+                                </details>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="pie-pagina">
+                <div class="contenedor-limite">
+                    <div class="pie-grid">
+                        <div class="pie-columna">
+                            <a href="index.html" class="logo">
+                            <img src="fotos/DLeite.png" alt="Logo de Devora Leite">
+                            </a>
+                            <p class="pie-info">C/ Corrida, nº6</p>
+                            <p class="pie-info">Telf: +34 985 121 589</p>
+                            <p class="pie-info">E-mail: dleitea@devoraleite.com</p>
+                        </div>
+                        <div class="pie-columna">
+                            <h3 class="pie-titulo">Enlaces Rápidos</h3>
+                            <ul class="pie-lista">
+                                <li><a href="index.html">Inicio</a></li>
+                                <li><a href="menu/menu.html">Menú</a></li>
+                                <li><a href="galeria.html">Galería</a></li>
+                                <li><a href="contacto.html">Reservas</a></li>
+                            </ul>
+                        </div>
+                        <div class="pie-columna">
+                            <h3 class="pie-titulo">Suscríbete</h3>
+                            <p class="pie-info">Recibe nuestras últimas noticias y ofertas especiales.</p>
+                            <form class="formulario-suscripcion">
+                                <input class="input-suscripcion" placeholder="Su correo electrónico" type="email" />
+                                <button class="boton-suscripcion" type="submit">Suscribirse</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="pie-derechos">
+                        <p> 2025 Devora Leite. Carlos Méndez Sandín (DIW).</p>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Platos Principales</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Work+Sans:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+    <link rel="icon" type="image/png" href="../fotos/DLeite.png">
+    <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+    <div class="contenedor-principal">
+        <div class="contenedor-contenido">
+
+            <header class="encabezado">
+                <div class="contenedor-limite">
+                    <div class="encabezado-contenido">
+                        <a href="../index.html" class="logo">
+                            <img src="../fotos/DLeite.png" alt="Logo de Devora Leite">
+                        </a>
+                        <nav class="navegacion" role="navigation">
+                            <a href="menu.html" class="enlace-navegacion enlace-activo">Menú</a>
+                            <a href="../galeria.html" class="enlace-navegacion">Galería</a>
+                            <a href="../contacto.html" class="enlace-navegacion">Contacto</a>
+                            <a href="../pedido.html" class="boton-primario boton-pedido">Pedir Ahora</a>
+                            <a href="../cuenta.html" class="enlace-navegacion icono-cuenta" title="Mi Cuenta">
+                                <span class="material-symbols-outlined">person</span>
+                            </a>
+                        </nav>
+                        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú móvil">
+                            <span class="material-symbols-outlined icono-menu">menu</span>
+                        </button>
+                        <button class="modo-oscuro-toggle" id="modo-oscuro-toggle" aria-label="Alternar modo oscuro">
+                            <span class="material-symbols-outlined icono-sol">light_mode</span>
+                            <span class="material-symbols-outlined icono-luna">dark_mode</span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <nav class="menu-movil-contenedor" id="menu-movil" role="navigation">
+                <a href="menu.html" class="enlace-navegacion-movil enlace-activo">Menú</a>
+                <a href="../galeria.html" class="enlace-navegacion-movil">Galería</a>
+                <a href="../contacto.html" class="enlace-navegacion-movil">Contacto</a>
+                <a href="../cuenta.html" class="enlace-navegacion-movil">Mi Cuenta</a>
+            </nav>
+
+            <main class="contenido-principal">
+
+                <section class="seccion seccion-banner-menu"
+                    style="background-image: url('../fotos/menu.png');">
+                    <div class="contenedor-limite banner-contenido">
+                        <h1 class="banner-titulo">Nuestro Menú</h1>
+                        <p class="banner-subtitulo">Explora nuestros platos de temporada y clásicos atemporales.</p>
+                    </div>
+                </section>
+
+                <div class="contenedor-limite contenedor-catalogo">
+
+                    <nav class="navegacion-categorias" role="navigation">
+                        <a href="menu.html" class="boton-categoria">Entrantes</a>
+                        <a href="principales.html" class="boton-categoria boton-activo">Platos Principales</a>
+                        <a href="postres.html" class="boton-categoria">Postres</a>
+                        <a href="bebidas.html" class="boton-categoria">Bebidas</a>
+                    </nav>
+
+                    <section class="seccion-catalogo">
+                        <h2 class="titulo-categoria">Platos Principales</h2>
+                        <div class="grid-catalogo">
+
+                            <div class="tarjeta-plato-catalogo">
+                                <div class="tarjeta-imagen-catalogo"
+                                    style="background-image: url('../fotos/principales_1.png');">
+                                </div>
+                                <div class="tarjeta-cuerpo-catalogo">
+                                    <h3 class="tarjeta-titulo">Solomillo Wellintong</h3>
+                                    <p class="tarjeta-descripcion-catalogo">Solomillo de cerdo cubierto de hojaldre casero con crema de setas.</p>
+                                    <p class="tarjeta-precios-detalle">En Local: 22 € | A Domicilio: 24 €</p>
+                                </div>
+                            </div>
+
+                            <div class="tarjeta-plato-catalogo">
+                                <div class="tarjeta-imagen-catalogo"
+                                    style="background-image: url('../fotos/principales_2.png');">
+                                </div>
+                                <div class="tarjeta-cuerpo-catalogo">
+                                    <h3 class="tarjeta-titulo">Chuleton de terneta IGP</h3>
+                                    <p class="tarjeta-descripcion-catalogo">Ternera asturiana de primera calidad hecha a la parrila.</p>
+                                    <p class="tarjeta-precios-detalle">En Local: 24 € | A Domicilio: 26 €</p>
+                                </div>
+                            </div>
+
+                            <div class="tarjeta-plato-catalogo">
+                                <div class="tarjeta-imagen-catalogo"
+                                    style="background-image: url('../fotos/principales_3.png');">
+                                </div>
+                                <div class="tarjeta-cuerpo-catalogo">
+                                    <h3 class="tarjeta-titulo">Steak Tartar</h3>
+                                    <p class="tarjeta-descripcion-catalogo">Solomillo de ternera picada muy fina con especias y pan cristal.</p>
+                                    <p class="tarjeta-precios-detalle">En Local: 16 € | A Domicilio: 18 €</p>
+                                </div>
+                            </div>
+
+                            <div class="tarjeta-plato-catalogo">
+                                <div class="tarjeta-imagen-catalogo"
+                                    style="background-image: url('../fotos/principales_4.png');">
+                                </div>
+                                <div class="tarjeta-cuerpo-catalogo">
+                                    <h3 class="tarjeta-titulo">Atum Tartar</h3>
+                                    <p class="tarjeta-descripcion-catalogo">Atún del norte con aguacate fresco.</p>
+                                    <p class="tarjeta-precios-detalle">En Local: 16 € | A Domicilio: 18 €</p>
+                                </div>
+                            </div>
+
+                            <div class="tarjeta-plato-catalogo">
+                                <div class="tarjeta-imagen-catalogo"
+                                    style="background-image: url('../fotos/principales_5.png');">
+                                </div>
+                                <div class="tarjeta-cuerpo-catalogo">
+                                    <h3 class="tarjeta-titulo">Pizza Dleite</h3>
+                                    <p class="tarjeta-descripcion-catalogo">Masa de pizza casera fermentada 48 horas y con la mejor seleccion de ingredientes.</p>
+                                    <p class="tarjeta-precios-detalle">En Local: 14 € | A Domicilio: 16 €</p>
+                                </div>
+                            </div>
+
+                            <div class="tarjeta-plato-catalogo">
+                                <div class="tarjeta-imagen-catalogo"
+                                    style="background-image: url('../fotos/principales_6.png');">
+                                </div>
+                                <div class="tarjeta-cuerpo-catalogo">
+                                    <h3 class="tarjeta-titulo">Burger Dleite</h3>
+                                    <p class="tarjeta-descripcion-catalogo">Pan brioche con ternera asturiana LTC de nuestro huerto y queso chedar con salsa secreta Dleite.</p>
+                                    <p class="tarjeta-precios-detalle">En Local:  € | A Domicilio:  €</p>
+                                </div>
+                            </div>
+
+                            <div class="tarjeta-plato-catalogo">
+                                <div class="tarjeta-imagen-catalogo"
+                                    style="background-image: url('../fotos/principales_7.png');">
+                                </div>
+                                <div class="tarjeta-cuerpo-catalogo">
+                                    <h3 class="tarjeta-titulo">Lubina al horno</h3>
+                                    <p class="tarjeta-descripcion-catalogo">Lubina del norte con su pil pil en una reducción..</p>
+                                    <p class="tarjeta-precios-detalle">En Local: 28 € | A Domicilio: 30 €</p>
+                                </div>
+                            </div>
+
+                            <div class="tarjeta-plato-catalogo">
+                                <div class="tarjeta-imagen-catalogo"
+                                    style="background-image: url('../fotos/principales_8.png');">
+                                </div>
+                                <div class="tarjeta-cuerpo-catalogo">
+                                    <h3 class="tarjeta-titulo">Dorada a la plancha</h3>
+                                    <p class="tarjeta-descripcion-catalogo">Dorada con guarnicion de patatas al horno y acabada en la plancha con aceite ajo y perejil.</p>
+                                    <p class="tarjeta-precios-detalle">En Local: 22 € | A Domicilio: 24 €</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
+            </main>
+
+            <footer class="pie-pagina">
+                <div class="contenedor-limite">
+                    <div class="pie-grid">
+                        <div class="pie-columna">
+                            <a href="../index.html" class="logo">
+                            <img src="../fotos/DLeite.png" alt="Logo de Devora Leite">
+                            </a>
+                            <p class="pie-info">C/ Corrida, nº6</p>
+                            <p class="pie-info">Telf: +34 985 121 589</p>
+                            <p class="pie-info">E-mail: dleitea@devoraleite.com</p>
+                        </div>
+                        <div class="pie-columna">
+                            <h3 class="pie-titulo">Enlaces Rápidos</h3>
+                            <ul class="pie-lista">
+                                <li><a href="../index.html">Inicio</a></li>
+                                <li><a href="menu.html">Menú</a></li>
+                                <li><a href="../galeria.html">Galería</a></li>
+                                <li><a href="../contacto.html">Reservas</a></li>
+                            </ul>
+                        </div>
+                        <div class="pie-columna">
+                            <h3 class="pie-titulo">Suscríbete</h3>
+                            <p class="pie-info">Recibe nuestras últimas noticias y ofertas especiales.</p>
+                            <form class="formulario-suscripcion">
+                                <input class="input-suscripcion" placeholder="Su correo electrónico" type="email" />
+                                <button class="boton-suscripcion" type="submit">Suscribirse</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="pie-derechos">
+                        <p> 2025 Devora Leite. Carlos Méndez Sandín (DIW).</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="../scripts.js"></script>
+</body>
+
+</html>
