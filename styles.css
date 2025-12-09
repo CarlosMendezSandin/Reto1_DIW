@@ -1,18 +1,12 @@
-/*
- * Archivo de Estilos Nativo para DevoraLeite
- * Estilos base, reset, variables de color y responsividad.
- */
-
 /* 1. FUENTES EXTERNAS */
 /* Las fuentes Work Sans (cuerpo) y Playfair Display (títulos) se cargan en el HTML */
 /* Iconografía: Material Symbols Outlined */
 .material-symbols-outlined {
     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-    font-size: 1.5rem; /* Tamaño base para iconos */
+    font-size: 1.5rem;
 }
 
 :root {
-    /* Base Fonts (Mantienes las que tenías) */
     --fuente-principal: 'Work Sans', sans-serif;
     --fuente-display: 'Playfair Display', serif;
 
@@ -220,7 +214,7 @@ h3 { font-size: 1.5rem; }
 /* 6. BOTONES (Comunes) */
 .boton-primario {
     background-color: var(--color-primario);
-    color: var(--color-fondo); /* Texto blanco/claro */
+    color: var(--color-fondo); 
     padding: 0.75rem 1.5rem;
     border-radius: 0.5rem;
     font-weight: 700;
@@ -282,7 +276,7 @@ h3 { font-size: 1.5rem; }
 .input-campo:focus, .input-suscripcion:focus {
     outline: none;
     border-color: var(--color-primario);
-    box-shadow: 0 0 0 2px rgba(29, 86, 201, 0.2); /* Sombra de foco */
+    box-shadow: 0 0 0 2px rgba(29, 86, 201, 0.2);
 }
 
 .modo-oscuro .input-campo, .modo-oscuro .input-suscripcion {
@@ -551,7 +545,7 @@ h3 { font-size: 1.5rem; }
 }
 
 .boton-suscripcion {
-    background-color: var(--color-fondo); /* Blanco en pie de página */
+    background-color: var(--color-fondo);
     color: var(--color-texto-principal);
     border: none;
     padding: 0.5rem 1rem;
@@ -603,7 +597,7 @@ h3 { font-size: 1.5rem; }
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6); /* Oscurecer la imagen */
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .banner-contenido {
@@ -727,7 +721,7 @@ h3 { font-size: 1.5rem; }
 }
 
 .input-direccion {
-    padding-left: 2.5rem; /* Espacio para el icono de búsqueda */
+    padding-left: 2.5rem;
 }
 
 .icono-buscador {
@@ -756,7 +750,7 @@ h3 { font-size: 1.5rem; }
 }
 
 .columna-categorias {
-    display: none; /* Ocultar por defecto en móvil */
+    display: none;
 }
 
 .titulo-categorias {
@@ -846,7 +840,7 @@ h3 { font-size: 1.5rem; }
 
 .columna-carrito {
     position: sticky;
-    top: 6rem; /* Ajuste para el encabezado sticky */
+    top: 6rem;
     height: fit-content;
 }
 
@@ -1396,7 +1390,7 @@ h3 { font-size: 1.5rem; }
     list-style: none; 
 }
 
-/* Despleglable para <details> */
+/* Despleglable para <detalles> */
 .resumen-pedido::-webkit-details-marker {
     display: none;
 }
